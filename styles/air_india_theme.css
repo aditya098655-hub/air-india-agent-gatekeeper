@@ -1,0 +1,289 @@
+/* ====================================================================
+   Air India Agent Gatekeeper Theme
+   Brand Palette:
+   - Primary: Air India Crimson Red (#D91424 / #BA0C2F)
+   - Secondary: Maharaja Royal Gold (#D4AF37 / #C5A059)
+   - Backgrounds: Clean neutral tones with dark executive contrast
+   - Badges: Green (#10B981), Amber (#F59E0B), Red (#EF4444)
+   ==================================================================== */
+
+/* Global container refinements */
+.main .block-container {
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+    max-width: 1200px;
+}
+
+/* Enrolment & Executive Header Card */
+.enrolment-banner {
+    background: linear-gradient(135deg, #8B0000 0%, #D91424 50%, #B22222 100%);
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 1.25rem 1.75rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(217, 20, 36, 0.25);
+    border-left: 6px solid #D4AF37;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.enrolment-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.enrolment-badge {
+    background: #D4AF37;
+    color: #111827;
+    font-weight: 800;
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    display: inline-block;
+}
+
+.enrolment-subtitle {
+    font-size: 0.85rem;
+    opacity: 0.9;
+    margin-top: 0.25rem;
+    color: #FFF8E7;
+}
+
+/* Metric KPI Cards */
+.kpi-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    text-align: center;
+    border-top: 4px solid #D91424;
+}
+
+.kpi-number {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1F2937;
+    margin: 0.25rem 0;
+}
+
+.kpi-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    color: #6B7280;
+}
+
+/* Decision Cards - High Contrast & Accessible */
+.decision-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding-bottom: 0.5rem;
+}
+
+.decision-card-title {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+}
+
+.decision-card-rule {
+    margin: 0.5rem 0;
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+.decision-card-reason {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.decision-card-meta {
+    margin-top: 0.75rem;
+    padding-top: 0.5rem;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    border-top: 1px dashed rgba(0, 0, 0, 0.12);
+    word-break: break-word;
+}
+
+/* 1. ALLOW: Light green background (#D1FAE5) with dark green text (#065F46) */
+.decision-card-allow {
+    background-color: #D1FAE5 !important;
+    color: #065F46 !important;
+    border: 2px solid #10B981 !important;
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(6, 95, 70, 0.08);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.decision-card-allow .decision-card-title,
+.decision-card-allow h3,
+.decision-card-allow p,
+.decision-card-allow span:not(.badge-allow):not(.badge-rule),
+.decision-card-allow div,
+.decision-card-allow small,
+.decision-card-allow strong,
+.decision-card-allow b {
+    color: #065F46 !important;
+}
+
+.decision-card-allow code {
+    background-color: #A7F3D0 !important;
+    color: #064E3B !important;
+    border: 1px solid #6EE7B7 !important;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+/* 2. ASK CUSTOMER: Light yellow background (#FEF3C7) with dark brown text (#92400E) */
+.decision-card-ask {
+    background-color: #FEF3C7 !important;
+    color: #92400E !important;
+    border: 2px solid #F59E0B !important;
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(146, 64, 14, 0.08);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.decision-card-ask .decision-card-title,
+.decision-card-ask h3,
+.decision-card-ask p,
+.decision-card-ask span:not(.badge-ask):not(.badge-rule),
+.decision-card-ask div,
+.decision-card-ask small,
+.decision-card-ask strong,
+.decision-card-ask b {
+    color: #92400E !important;
+}
+
+.decision-card-ask code {
+    background-color: #FDE68A !important;
+    color: #78350F !important;
+    border: 1px solid #FCD34D !important;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+/* 3. BLOCK: Light red background (#FEE2E2) with dark red text (#991B1B) */
+.decision-card-block {
+    background-color: #FEE2E2 !important;
+    color: #991B1B !important;
+    border: 2px solid #EF4444 !important;
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(153, 27, 27, 0.08);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.decision-card-block .decision-card-title,
+.decision-card-block h3,
+.decision-card-block p,
+.decision-card-block span:not(.badge-block):not(.badge-rule),
+.decision-card-block div,
+.decision-card-block small,
+.decision-card-block strong,
+.decision-card-block b {
+    color: #991B1B !important;
+}
+
+.decision-card-block code {
+    background-color: #FECACA !important;
+    color: #7F1D1D !important;
+    border: 1px solid #FCA5A5 !important;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+/* Badges */
+.badge-allow {
+    background-color: #059669 !important;
+    color: #FFFFFF !important;
+    padding: 0.35rem 0.8rem;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.badge-ask {
+    background-color: #D97706 !important;
+    color: #FFFFFF !important;
+    padding: 0.35rem 0.8rem;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.badge-block {
+    background-color: #DC2626 !important;
+    color: #FFFFFF !important;
+    padding: 0.35rem 0.8rem;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.badge-rule {
+    background-color: #1F2937 !important;
+    color: #D4AF37 !important;
+    padding: 0.25rem 0.55rem;
+    border-radius: 4px;
+    font-family: monospace;
+    font-weight: 800;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+/* Airline Subheader */
+.section-header {
+    border-bottom: 2px solid #E5E7EB;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.25rem;
+    color: #1F2937;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Simulation Customer Approval Box */
+.customer-approval-box {
+    background-color: #FFFFFF;
+    border: 2px dashed #D4AF37;
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin-top: 1rem;
+    background: #FFFDF9;
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "agent_id": "AG-AI-101",
+    "agent_name": "Delhi Airport Concierge Bot",
+    "organization": "Air India Airport Operations",
+    "role": "Customer Concierge & Assistance",
+    "registered_at": "2026-11-20 01:06:01",
+    "status": "ACTIVE",
+    "revoked_at": null,
+    "revocation_reason": null
+  },
+  {
+    "agent_id": "AG-AI-102",
+    "agent_name": "Corporate Travel Desk Agent",
+    "organization": "Tata Sons Enterprise Travel",
+    "role": "Corporate Booking Agent",
+    "registered_at": "2026-11-20 01:06:01",
+    "status": "ACTIVE",
+    "revoked_at": null,
+    "revocation_reason": null
+  },
+  {
+    "agent_id": "AG-AI-103",
+    "agent_name": "OTA Booking Partner (Expedia Bot)",
+    "organization": "Expedia Group India",
+    "role": "Third-Party Booking Partner",
+    "registered_at": "2026-11-20 01:06:01",
+    "status": "ACTIVE",
+    "revoked_at": null,
+    "revocation_reason": null
+  },
+  {
+    "agent_id": "AG-AI-999",
+    "agent_name": "Deprecated Fare Scraper Bot",
+    "organization": "SkyScanner Scraper Service",
+    "role": "High-Frequency Scraper",
+    "registered_at": "2026-01-10 09:30:00",
+    "status": "REVOKED",
+    "revoked_at": "2026-11-20 01:06:01",
+    "revocation_reason": "Excessive query rate violating API Fair Use Policy"
+  }
+]
